@@ -1,7 +1,6 @@
 exports.componentSrcIndex = {
   path: 'src/components/<%COMPONENT%>/src/<%component%>.tsx',
-  temp: `
-import React from 'react';
+  temp: `import React from 'react';
 import { View } from 'react-native';
 import { <%COMPONENT%>Props } from './types';
 import styles from './styles';
@@ -36,8 +35,7 @@ export * from './src/types';
 
 exports.componentReadme = {
   path: 'src/components/<%COMPONENT%>/README.md',
-  temp: `
-## <%COMPONENT%>
+  temp: `## <%COMPONENT%>
 
 a brief description of the component
 
@@ -59,12 +57,11 @@ export * from './<%COMPONENT%>';
 };
 
 exports.componentExample = {
-  path: 'src/examples/<%component%>.tsx',
-  temp: `
-import React from 'react';
+  path: 'examples/<%component%>.tsx',
+  temp: `import React from 'react';
 import { View, Text } from 'react-native';
-import { RN<%COMPONENT%>, RNCard } from '../components';
-import globalStyles from './styles';
+import { RN<%COMPONENT%>, RNCard } from '@/components';
+import globalStyles from '@/public/styles';
 
 export const RN<%COMPONENT%>Exp = () => {
   return (
@@ -83,7 +80,7 @@ exports.app = {
   path: 'App.tsx',
   temp: `
 <% for %>
-import { RN<%COMPONENT%>Exp } from './src/examples/<%component%>';
+import { RN<%COMPONENT%>Exp } from '@/examples/<%component%>';
 <% /for %>
 `,
 };

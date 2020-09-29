@@ -4,7 +4,6 @@ import { StyleSheet, ScrollView } from 'react-native';
 import { ActionCardExp } from '@/examples/action-card';
 import { ButtonExp } from '@/examples/button';
 import { CardExp } from '@/examples/card';
-import { CheckBoxExp } from '@/examples/check-box';
 // <% combination temp end %>
 
 const App = () => {
@@ -14,7 +13,6 @@ const App = () => {
       showsVerticalScrollIndicator={false}
       style={styles.scrollView}
     >
-      <CheckBoxExp />
       <ButtonExp />
       <ActionCardExp />
       <CardExp />

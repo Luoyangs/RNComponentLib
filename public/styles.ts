@@ -10,4 +10,15 @@ export default StyleSheet.create({
   margin16: {
     marginTop: 12,
   },
+  flex: {
+    flexWrap: 'wrap',
+    flexDirection: 'row',
+    alignSelf: 'flex-start',
+  },
+  icon: {
+    borderRadius: 3,
+    marginVertical: 8,
+    marginHorizontal: 4,
+    backgroundColor: '#f5f5f5',
+  },
 });
